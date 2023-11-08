@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".A5_AddContact"
+    android:background="#DEDBFA"
+    android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/linearlayout"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Friend"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/abril_fatface"
+            android:id="@+id/ph_txt2"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/usericon"
+            android:id="@+id/ph_img3"
+            android:layout_below="@id/ph_txt2"></ImageView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_marginStart="42dp"
+            android:layout_marginEnd="42dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:boxCornerRadiusTopStart="20dp"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            android:id="@+id/ph_et2"
+            android:layout_below="@id/ph_img3"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abril_fatface"
+                android:hint="Contact Name"
+                android:drawablePadding="14dp"
+                android:ems="12"
+                android:id="@+id/edt_friendName"
+                android:drawableStart="@drawable/baseline_people_24"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_marginStart="42dp"
+            android:layout_marginEnd="42dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            app:boxCornerRadiusTopStart="20dp"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            android:layout_below="@id/ph_et2"
+            android:id="@+id/ph_et3"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abril_fatface"
+                android:hint="Contact Number"
+                android:drawablePadding="14dp"
+                android:ems="12"
+                android:id="@+id/edt_friendNum"
+                android:drawableStart="@drawable/baseline_call_24"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ph_et3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="Submit"
+            android:background="#DEDBFA"
+            android:textColor="#5F56AE"
+            android:fontFamily="@font/abril_fatface"
+
+            android:id="@+id/btn_addFriend"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".A3_Userpage"
+    android:orientation="vertical"
+    android:background="#E4F4FB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="32dp"
+        android:background="@drawable/linearlayout"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome,"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="18dp"
+            android:fontFamily="@font/abril_fatface"
+            android:textSize="17dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:layout_marginStart="18dp"
+            android:fontFamily="@font/abril_fatface"
+            android:textSize="23dp"
+            />
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/icon_girl"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:layout_width="220dp"
+            android:layout_height="54dp"
+            android:text="Alert Friends"
+            android:textSize="16dp"
+            android:textAllCaps="false"
+            android:background="#DFF1FB"
+            android:paddingStart="18dp"
+            android:paddingEnd="28dp"
+            android:layout_gravity="center"
+            android:id="@+id/btn_alertFriends"
+            android:layout_marginTop="18dp"
+            android:drawableStart="@drawable/baseline_announcement_24"/>
+        <Button
+            android:layout_width="220dp"
+            android:layout_height="54dp"
+            android:text="PhoneBook"
+            android:textSize="16dp"
+            android:paddingStart="18dp"
+            android:paddingEnd="28dp"
+            android:background="#DFF1FB"
+            android:textAllCaps="false"
+            android:id="@+id/btn_userPb"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/baseline_library_books_24"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="28dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Check your location"
+                android:fontFamily="@font/abril_fatface"/>
+
+            <TextView
+                android:id="@+id/txt_toMapView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:fontFamily="@font/abril_fatface"
+                android:text=" here"
+                android:textColor="@color/teal_700"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

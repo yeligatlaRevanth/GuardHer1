@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "481355369565",
+    "project_id": "myprojectguardher",
+    "storage_bucket": "myprojectguardher.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:481355369565:android:ce8b43712ffea4688d51b4",
+        "android_client_info": {
+          "package_name": "com.example.guardher"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbLbVQQxxVnrSR55r2k39TWi3dd5Iowfo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

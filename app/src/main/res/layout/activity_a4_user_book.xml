@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".A4_UserBook"
+    android:id="@+id/my_drawer_layout"
+    android:background="#FFD9A1">
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/my_menu"
+        android:id="@+id/nv_my"
+        android:layout_gravity="start"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="32dp"
+        android:background="@drawable/linearlayout">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lst1"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/btn_fab"
+            android:layout_marginEnd="12dp"
+            android:backgroundTint="#FF9800"
+            android:src="@drawable/baseline_person_add_24"/>
+
+    </FrameLayout>
+    
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
